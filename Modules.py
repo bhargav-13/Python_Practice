@@ -1,7 +1,9 @@
-import math
+import time
 
-print(math.pi)
+# print(time.ctime(time.time()))
 
-print(help("math"))
+time_Obj = time.localtime()
 
-print(help("modules"))
+local_time = time.strftime("%d / %B / %Y  %H:%M:%S", time_Obj )
+
+print(local_time)
